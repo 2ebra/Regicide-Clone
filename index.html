@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Nerko+One&family=UnifrakturCook&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top-wrapper">
+                <div class="side-areas">
+                    <div class="card-area" id="discard-deck">
+                            
+                    </div>
+                    <p>
+                        Discard
+                    </p>
+                </div>
+                <div class="boss-area">
+                    <div class="game-area card-area" id="boss-card">
+
+
+                    </div>
+                    <div id="boss-info-area">
+                        <p>Attack:</p>
+                        <p>Health:</p>
+                    </div>
+                </div>
+                <div class="side-areas">
+                    <div class="card-area" id="draw-deck">
+                            
+                    </div>
+                    <p>
+                        Draw
+                    </p>
+                </div>
+
+            </div>
+            <div class="game-area" id="played-cards">
+
+            </div>
+            <div class="game-area">
+                <div class="game-area" id="hand-area">
+
+                </div>
+
+            </div>
+            <div id="buttons-container">
+            <div id="action-btn"><button onclick="playCards()">PLAY CARDS</button></div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

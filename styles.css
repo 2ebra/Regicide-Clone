@@ -1,0 +1,230 @@
+body, h1, h2, h3, p {
+    margin:0;
+    padding: 0;
+}
+
+
+body{
+    margin:0;
+    /*background:#7FA6A3;*/
+    font-size: 1.3vw;
+    font-family: 'MedievalSharp', cursive;
+
+    background-color: #7FA6A3;
+    background: linear-gradient(135deg, #629f9a55 25%, transparent 25%) -13px 0/ 26px 26px, linear-gradient(225deg, #629f9a 25%, transparent 25%) -13px 0/ 26px 26px, linear-gradient(315deg, #629f9a55 25%, transparent 25%) 0px 0/ 26px 26px, linear-gradient(45deg, #629f9a 25%, #7FA6A3 25%) 0px 0/ 26px 26px;
+
+
+}
+
+.wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    margin:auto;
+    padding: 1vw;   
+}
+
+.top-wrapper {
+    display:flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+
+}
+
+.game-area {
+    display:flex;
+    flex-direction: row;
+    height:9vw;
+    margin: 10px auto;
+}
+
+.boss-area {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.side-areas {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:9vw;
+    width: 6vw;
+    margin: 10px auto;
+}
+
+.side-areas > p {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+#discard-area, #draw-deck{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#boss-card {
+    width: 7vw;
+    height: 10vw;
+}
+#boss-info-area{
+    display: flex;
+    flex-direction: column;
+    margin:.2vw;
+
+    color: white;
+    text-shadow: 0px 0px 10px black;
+
+}
+
+.card {
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: .5vw;
+    margin: .2vw;
+
+    font-family: 'Nerko One', cursive;
+
+    font-size: 1.25vw;;
+
+    height: 8vw;
+    width: 4.55vw;
+
+    border-radius: .3vw;
+
+    background-color:#E2DFD6;
+
+    top: 0;
+    box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.15);
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.card-area {
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: .5vw;
+    margin: .2vw;
+
+    font-size: 1.25vw;;
+
+    height: 8vw;
+    width: 4.55vw;
+
+    border-radius: .3vw;
+
+    background-color:#7E637455;
+
+    top: 0;
+    box-shadow: 0 0 0 #685962;
+    transform: scale(1);
+    transition: 0.3s;
+
+}
+
+
+.card > .center-img-el {
+    margin:0 auto;
+    height:40%;
+    width:70%;
+
+}
+
+
+.card > .corner-el {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30%;
+    width:100%;
+    overflow: hidden;
+
+}
+
+.card > .corner-bot-el {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 30%;
+    width:100%;
+    transform: rotate(180deg);
+
+}
+
+
+
+
+#hand-area > .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 2px 10px #6d5564;
+    cursor: pointer;
+    z-index:1;
+}
+
+#selected {
+    top:-4vw;
+
+}
+
+#buttons-container {
+    display:flex;
+    flex-direction: row;
+
+}
+
+button {
+    background: #7E6374;
+    color: #FFF;
+    padding: 1vw 3vw;
+    border: 0;
+    border-radius: 5px;
+    margin: 1vw;
+    transition: 0.3s;
+}
+button:hover {
+    background: #6d5564;
+    cursor: pointer;
+    
+}
+
+
+/* Variables */
+
+.Clubs-el{
+    background: url(images/suitClubs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Hearts-el{
+    background: url(images/suitHearts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.Spades-el{
+    background: url(images/suitSpades.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Diamonds-el{
+    background: url(images/suitDiamonds.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
